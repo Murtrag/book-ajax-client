@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	$(function(){
+		$.ajax({
+		 url: "http://date.jsontest.com/",
+		}).done(function(element){
+			console.log(element.date);
+		})
+		///////////////////////////
+
+		$.ajax({
+			url: "https://swapi.co/api/people/4/",
+			}).done(function(element){
+				console.log(element)
+				});
+
+
+	});
+
+		
+
+</script>
+
+
+</body>
+</html>
